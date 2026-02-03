@@ -69,13 +69,13 @@
 <div align="center">
 
 ### Main Interface
-![Main Interface](https://via.placeholder.com/800x500/2563eb/ffffff?text=Blow+AI+Main+Interface)
+![Main Interface](https://github.com/muthumaran333/blow-ai-/blob/main/image/image1.png)
 
 ### Voice Recording Modal
-![Voice Modal](https://via.placeholder.com/400x400/10b981/ffffff?text=Voice+Recording)
+![Voice Modal](https://github.com/muthumaran333/blow-ai-/blob/main/image/image3.png)
 
 ### Settings Panel
-![Settings](https://via.placeholder.com/600x400/f59e0b/ffffff?text=Customization+Options)
+![Settings](https://github.com/muthumaran333/blow-ai-/blob/main/image/image2.png)
 
 </div>
 
@@ -95,8 +95,8 @@ Before you begin, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/blow-ai-voice-assistant.git
-cd blow-ai-voice-assistant
+git clone https://github.com/muthumaran333/blow-ai-.git
+cd blow-ai-
 ```
 
 ### Step 2: Create Virtual Environment
