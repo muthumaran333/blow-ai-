@@ -45,7 +45,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# -------------------- CONFIG --------------------
+# -------------------- CONFIG ------------------
 CONFIG = {
     "assistant_name": "Blow",
     "ollama_model": os.getenv("OLLAMA_MODEL", "llama3.2:3b"),
@@ -574,5 +574,6 @@ if __name__ == "__main__":
     print(f"Ollama Model: {CONFIG['ollama_model']}")
     print(f"Target Sample Rate: {CONFIG['target_sample_rate']}Hz")
     print(f"Min Duration: {CONFIG['min_audio_duration']}s")
+    print(f"Max Duration: {CONFIG['max_audio_duration']}s")
     print("="*70 + "\n")
     uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
