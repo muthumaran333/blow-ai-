@@ -87,6 +87,12 @@
 </div>
 
 ---
+## 🎥 Demo Video
+
+[▶️ Watch the Blow AI Demo Video](https://github.com/muthumaran333/blow-ai-/blob/main/videos/demo.mp4)
+
+
+---
 
 ## 🛠️ Installation
 
