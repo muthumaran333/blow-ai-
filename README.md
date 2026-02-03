@@ -89,7 +89,7 @@
 ---
 ## 🎥 Demo Video
 
-[▶️ Watch the Blow AI Demo Video](https://github.com/muthumaran333/blow-ai-/blob/main/image/recordings.mp4)
+[▶️ Watch the Blow AI Demo Video](https://drive.google.com/file/d/1irkT08JXxCn6VRPE3vJVXpK6gCbAMd7W/view?usp=sharing)
 
 
 ---
