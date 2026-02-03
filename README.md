@@ -1,733 +1,482 @@
-# 🎙️ Blow AI Voice Assistant
+# 🎙️ Blow AI - Advanced Voice Assistant
 
-## Intelligent Voice Communication - Works Everywhere 🌍
+<div align="center">
 
-**A professional-grade voice assistant that works both online and offline.** Whether you have internet or not, Blow AI provides intelligent voice interaction. Switch between powerful cloud AI (Google Gemini) when connected, or use the fast local AI model when offline—no interruptions, no compromises.
+![Blow AI Banner](https://img.shields.io/badge/Blow_AI-Voice_Assistant-2563eb?style=for-the-badge&logo=microphone&logoColor=white)
 
----
+**Your Intelligent Voice-Powered AI Companion**
 
-### 🚀 What is Blow AI?
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat)](LICENSE)
 
-Blow AI is a sophisticated voice assistant platform built for professionals and developers who need:
+[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [Configuration](#-configuration)
 
-- **Hybrid Intelligence**: Seamlessly switch between local and cloud AI models
-- **Always Available**: Works offline with local Ollama model, supercharged online with Google Gemini
-- **Complete Voice Solution**: From listening to your voice, understanding it, thinking, and speaking back
-- **Easy to Use**: Simple interface that anyone can use immediately
-- **Privacy Conscious**: Full control over your data and where it runs
+</div>
 
 ---
 
-## 🎯 How It Works
+## 🌟 Overview
 
-### The Complete Journey
+**Blow AI** is a cutting-edge voice assistant that combines the power of speech recognition, natural language processing, and text-to-speech synthesis to create a seamless conversational experience. Whether you're looking to automate tasks, get quick answers, or simply have an engaging conversation, Blow AI is your go-to companion.
 
-```
-📢 You Speak
-    ↓
-🎧 Your Computer Listens (Web Audio API)
-    ↓
-🧠 AI Understands (OpenAI Whisper - converts voice to text)
-    ↓
-💭 AI Thinks (Ollama local OR Gemini cloud)
-    ↓
-🗣️ AI Speaks Back (Text-to-Speech engine)
-    ↓
-👂 You Hear the Response
-```
+### ✨ Why Choose Blow AI?
+
+- 🎤 **Natural Voice Interaction** - Speak naturally and get human-like responses
+- 🧠 **Dual AI Models** - Choose between local Ollama or cloud-based Gemini AI
+- 🎨 **Beautiful Modern UI** - Sleek, responsive design that works on any device
+- 🔒 **Privacy-Focused** - Option to run completely offline with local models
+- 🌍 **Multiple Voices** - 10+ natural-sounding voices across different accents
+- 💬 **Conversation History** - Never lose track of your discussions
+- ⚡ **Real-Time Processing** - Lightning-fast responses with optimized audio processing
 
 ---
 
-## ✨ Key Features
+## 🚀 Features
 
-### 🌐 **Dual Model System** - The Game Changer
+### 🎯 Core Capabilities
 
-| Feature | Offline Mode | Online Mode |
-|---------|:---:|:---:|
-| **Uses** | Local Ollama Model | Google Gemini AI |
-| **Internet Required** | ❌ No | ✅ Yes |
-| **Speed** | ⚡ Instant | 🔄 Few seconds |
-| **Response Quality** | 🎯 Good | 🌟 Excellent |
-| **Works Anywhere** | 🏠 Everywhere | 🌍 With WiFi |
-| **Privacy** | 🔒 100% Local | 📊 On Google's servers |
+| Feature | Description |
+|---------|-------------|
+| **Voice Recognition** | Powered by OpenAI Whisper for accurate speech-to-text conversion |
+| **AI Conversations** | Intelligent responses using Ollama (local) or Google Gemini (cloud) |
+| **Text-to-Speech** | Natural voice synthesis with Edge TTS engine |
+| **Chat History** | Save and organize multiple conversation threads |
+| **Custom Prompts** | Create and save your favorite prompt templates |
+| **Voice Selection** | Choose from 10+ voices (US, UK, AU, IN accents) |
+| **Real-Time Streaming** | See transcriptions and responses as they happen |
 
-**The Smart Part:** You choose which model to use! Want fast responses offline? Use Ollama. Need the best AI answers with internet? Switch to Gemini. No restarts needed.
+### 🎨 User Interface
 
----
+- **Modern Design** - Clean, intuitive interface inspired by leading AI assistants
+- **Responsive Layout** - Perfect on desktop, tablet, and mobile devices
+- **Dark/Light Mode Ready** - Easy on the eyes in any lighting condition
+- **Sidebar Navigation** - Quick access to chat history and settings
+- **Quick Actions** - Pre-built prompts to get started instantly
 
-### 🗣️ **Perfect Voice Understanding**
+### 🔧 Technical Highlights
 
-Our system uses advanced audio processing to understand you better:
-- Works with any microphone quality
-- Automatically cleans up background noise  
-- Understands different speaking speeds
-- Supports English language clearly
-
----
-
-### 💾 **Remembers Your Conversation**
-
-The assistant keeps track of what you've said before. This means:
-- You can ask follow-up questions naturally
-- It understands context from earlier in the conversation
-- Feels like talking to a real person, not a robot
-- Can reset memory when you want a fresh start
+- **FastAPI Backend** - High-performance async API server
+- **Advanced Audio Processing** - Multi-format support (WebM, WAV, OGG)
+- **Noise Reduction** - Built-in filters for clearer audio
+- **Error Recovery** - Robust error handling and validation
+- **Extensible Architecture** - Easy to add new features and models
 
 ---
 
-### 🎯 **Your Custom Commands**
+## 📸 Demo
 
-Create custom prompts for things you do often:
-- "Tell me a joke"
-- "Weather summary"
-- "Remind me to..."
+<div align="center">
 
-Just add them once, use them forever. They're saved on your computer.
+### Main Interface
+![Main Interface](https://via.placeholder.com/800x500/2563eb/ffffff?text=Blow+AI+Main+Interface)
 
----
+### Voice Recording Modal
+![Voice Modal](https://via.placeholder.com/400x400/10b981/ffffff?text=Voice+Recording)
 
-### ⚡ **Lightning Fast**
+### Settings Panel
+![Settings](https://via.placeholder.com/600x400/f59e0b/ffffff?text=Customization+Options)
 
-Built with modern technology (FastAPI) that:
-- Responds immediately to your requests
-- Handles multiple requests at once
-- Never freezes or hangs
-- Runs smoothly even on older computers
+</div>
 
 ---
 
-## 🌍 Online vs Offline - Which Should You Choose?
+## 🛠️ Installation
 
-### 🏠 **Offline Mode (Local Ollama)**
+### Prerequisites
 
-**Perfect for:**
-- No internet connection
-- Privacy-sensitive conversations  
-- Working on trains, planes, remote locations
-- Testing and development
-- Running 24/7 without internet bills
+Before you begin, ensure you have the following installed:
 
-**What you get:**
-- Instant responses
-- All processing on your computer
-- Zero data sent anywhere
-- No API key needed
+- **Python 3.8+** - [Download here](https://python.org)
+- **Node.js** (optional, for frontend development) - [Download here](https://nodejs.org)
+- **Ollama** (for local AI) - [Download here](https://ollama.ai)
+- **FFmpeg** (for audio processing) - [Download here](https://ffmpeg.org)
 
----
+### Step 1: Clone the Repository
 
-### 🌐 **Online Mode (Google Gemini)**
-
-**Perfect for:**
-- Need best quality answers
-- Complex questions
-- Creative tasks
-- You have stable internet
-
-**What you get:**
-- Smarter, more accurate responses
-- Understanding of latest information
-- Better at solving complex problems
-- Professional-grade AI
-
----
-
-## 📦 What You're Getting
-
-When you install Blow AI, you get:
-
-### **The Brain** 🧠
-Three AI engines work together:
-1. **Whisper** - Listens to your voice and converts to text (like a secretary taking notes)
-2. **Ollama** - Local AI that thinks without internet (like a colleague in your office)
-3. **Gemini** - Cloud AI that's more powerful when online (like consulting an expert)
-
-### **The Voice** 🎤
-Two voice systems:
-1. **Web Microphone** - Records what you say
-2. **Text-to-Speech** - Speaks the responses back to you naturally
-
-### **The Interface** 🖥️
-Beautiful, modern design with:
-- Big microphone button to record voice
-- Radio buttons to switch between AI models
-- Custom prompt buttons for quick commands
-- Clean conversation display
-
----
-
-## 🚀 Getting Started
-
-### What You Need
-- Computer with Windows, Mac, or Linux
-- Python 3.10 or newer (like a software engine)
-- Internet (optional - only needed for Gemini mode)
-- 8GB of memory (RAM) minimum
-- 2GB free storage space
----
-
-## 🎨 The User Experience
-
-### Step 1: Choose Your AI Brain
-```
-☐ Ollama (Fast, Local, Always Works)
-☑ Gemini (Powerful, Online, Best Quality)
+```bash
+git clone https://github.com/yourusername/blow-ai-voice-assistant.git
+cd blow-ai-voice-assistant
 ```
 
-### Step 2: Click Microphone Button
-```
-Click the big 🎤 button and start speaking
-The button turns red while recording
+### Step 2: Create Virtual Environment
+
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-### Step 3: Wait for Processing
-```
-1. Your voice is converted to text
-2. AI thinks about your question
-3. AI decides on best answer
-4. Answer is converted to speech
+### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
 ```
 
-### Step 4: Hear the Response
+**Required packages:**
+```txt
+fastapi
+uvicorn[standard]
+openai-whisper
+soundfile
+ollama
+edge-tts
+scipy
+librosa
+google-generativeai
+python-dotenv
+numpy
 ```
-Speaker plays the response back to you
-You can see the text on screen too
+
+### Step 4: Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+# AI Model Settings
+OLLAMA_MODEL=llama3.2:3b
+DEFAULT_LLM=ollama
+
+# Whisper Settings
+WHISPER_MODEL=base
+TARGET_SAMPLE_RATE=16000
+
+# TTS Settings
+TTS_VOICE=en-US-GuyNeural
+
+# Audio Processing
+MIN_AUDIO_DURATION=0.3
+MAX_AUDIO_DURATION=30.0
+
+# Google Gemini (Optional)
+GEMINI_API_KEY=your_api_key_here
+```
+
+### Step 5: Install Ollama Models
+
+```bash
+# Download and run Ollama
+ollama pull llama3.2:3b
+
+# Or use other models
+ollama pull llama2
+ollama pull mistral
+```
+
+### Step 6: Start the Server
+
+```bash
+# Start the FastAPI backend
+python server.py
+
+# Server will run on http://localhost:8000
+```
+
+### Step 7: Open the Interface
+
+Open `index.html` in your web browser or serve it with a simple HTTP server:
+
+```bash
+# Python HTTP Server
+python -m http.server 8080
+
+# Then visit http://localhost:8080
 ```
 
 ---
 
-## 💡 Real World Examples
+## 🎮 Usage
 
-### Example 1: Working on a Train (No Internet)
-```
-You: "What's my todo list for today?"
-AI (Ollama): "Based on our conversation, you need to..."
-✅ Works perfectly offline!
-```
+### Basic Voice Interaction
 
-### Example 2: Need Professional Help (With Internet)
-```
-You: "Write a professional email about..."
-AI (Gemini): "Here's a well-written email..."
-✅ Gets the best response from cloud AI!
-```
+1. **Click the Microphone Button** 🎤 or press the voice button in the input area
+2. **Speak Your Message** - The assistant will transcribe your speech in real-time
+3. **Get AI Response** - Blow will process your request and respond with voice
+4. **Continue Conversation** - Your chat history is automatically saved
 
-### Example 3: Quick Notes (Anytime)
-```
-You: "Add eggs to my shopping list"
-AI: "Added eggs to shopping list"
-✅ Custom prompt you created once!
-```
+### Text Input
 
----
+Simply type your message in the input field and press **Enter** or click the send button.
 
-## 🔒 Privacy & Security
+### Switching AI Models
 
-**Your data is YOUR data.**
+1. Open the **sidebar** (click the menu icon)
+2. Select your preferred model:
+   - **Ollama** - Fast, local, private
+   - **Gemini** - Advanced, cloud-based, powerful
 
-### Offline Mode (Complete Privacy)
-- ✅ Nothing leaves your computer
-- ✅ No servers involved
-- ✅ No one can see your conversations
-- ✅ Complete offline functionality
+### Customizing Voice
 
-### Online Mode (Google Privacy)
-- Follows Google's privacy standards
-- Data sent to Google servers
-- Used only to process your request
-- You can review [Google's privacy policy](https://policies.google.com/privacy)
+1. Click **Settings** ⚙️ in the header or sidebar
+2. Choose from 10+ available voices
+3. Click **Test Voice** to hear a sample
+4. Your preference is automatically saved
 
-### Always Protected
-- API keys stored locally (not in code)
-- Conversations not permanently saved
-- HTTPS encryption available
-- You control what data is stored
+### Creating Custom Prompts
+
+1. Open the sidebar
+2. Find the **Custom Prompts** section
+3. Click the **+** button
+4. Enter your prompt text
+5. Use it anytime with one click
 
 ---
 
-## 🎯 Use Cases
+## ⚙️ Configuration
 
-### 👨‍💼 For Professionals
-- Voice notes while typing
-- Hands-free task management  
-- Quick research queries
-- Meeting transcription preparation
+### Available Voices
 
-### 👨‍🏫 For Students
-- Voice-based learning
-- Practice conversations
-- Question answering
-- Study notes creation
+| Voice ID | Name | Accent | Gender |
+|----------|------|--------|--------|
+| en-US-GuyNeural | Guy | US | Male |
+| en-US-JennyNeural | Jenny | US | Female |
+| en-US-AriaNeural | Aria | US | Female |
+| en-US-DavisNeural | Davis | US | Male |
+| en-GB-RyanNeural | Ryan | UK | Male |
+| en-GB-SoniaNeural | Sonia | UK | Female |
+| en-AU-NatashaNeural | Natasha | AU | Female |
+| en-AU-WilliamNeural | William | AU | Male |
+| en-IN-NeerjaNeural | Neerja | IN | Female |
+| en-IN-PrabhatNeural | Prabhat | IN | Male |
 
-### 👨‍💻 For Developers
-- REST API for integration
-- Customizable AI models
-- Open architecture
-- Local and cloud options
+### Whisper Models
 
-### 🏠 For Everyone
-- Smart home control prep
-- Voice reminders
-- Accessibility features
-- Educational purposes
+Choose based on your needs:
 
----
+| Model | Size | Speed | Accuracy |
+|-------|------|-------|----------|
+| tiny | 39 MB | Fastest | Good |
+| base | 74 MB | Fast | Better |
+| small | 244 MB | Medium | Great |
+| medium | 769 MB | Slow | Excellent |
+| large | 1550 MB | Slowest | Best |
 
-## 📊 Performance
+### Recommended Settings
 
-### Speed Comparison
+**For Best Performance:**
+- Whisper Model: `base` or `small`
+- Ollama Model: `llama3.2:3b`
+- Sample Rate: `16000`
 
-**Ollama (Offline)**
-- First response: Instant (no waiting)
-- No internet needed
-- Consistent performance
-- Perfect for: Quick interactions, offline use
-
-**Gemini (Online)**  
-- First response: 2-8 seconds
-- Internet required
-- Better quality answers
-- Perfect for: Complex questions, best accuracy
+**For Best Quality:**
+- Whisper Model: `medium` or `large`
+- Ollama Model: `llama2:13b` or use Gemini
+- Sample Rate: `48000`
 
 ---
 
-## 🛠️ Technical Overview (Simple Version)
+## 🔌 API Endpoints
 
-### How Everything Connects
-
-```
-Your Computer
-├── Frontend (What you see and use)
-├── Backend Server (Does the thinking)
-│   ├── Whisper (Hears your voice)
-│   ├── Ollama (Local thinking)
-│   └── Gemini API (Cloud thinking)
-└── Storage (Remembers conversations)
+### Health Check
+```http
+GET /health
 ```
 
-### No Complex Setup
-You don't need to understand this to use it. Installation handles everything automatically.
+### Transcribe Audio
+```http
+POST /transcribe
+Content-Type: application/json
+
+{
+  "audio_data": "base64_encoded_audio",
+  "sample_rate": 48000
+}
+```
+
+### Chat
+```http
+POST /chat
+Content-Type: application/json
+
+{
+  "message": "Hello, Blow!",
+  "use_history": true,
+  "llm_model": "ollama"
+}
+```
+
+### Text-to-Speech
+```http
+POST /tts
+Content-Type: application/json
+
+{
+  "text": "Hello, world!",
+  "voice": "en-US-GuyNeural"
+}
+```
+
+### Get Available Models
+```http
+GET /models
+```
+
+### Conversation History
+```http
+GET /conversation
+DELETE /conversation
+```
 
 ---
 
-## 📚 Documentation
+## 🏗️ Architecture
 
-We've created complete guides for you:
-
-| Document | Purpose |
-|----------|---------|
-| **[SETUP.md](SETUP.md)** | Step-by-step installation guide with pictures |
-| **[QUICK_REFERENCE.md](QUICK_REFERENCE.md)** | Quick answers to common questions |
-| **[CHANGELOG.md](CHANGELOG.md)** | What's new in each version |
-| **This README** | Overview and features |
-
----
-
-## 🤔 Frequently Asked Questions
-
-### Q: Do I need internet to use it?
-**A:** No! Use Ollama offline. Internet only needed for Gemini mode.
-
-### Q: Can I switch models while talking?
-**A:** Yes! Just click the radio button. New conversation will use the selected model.
-
-### Q: Where are my conversations stored?
-**A:** In your browser (offline mode) or Gemini's servers (online mode). You can delete anytime.
-
-### Q: Is my voice recorded permanently?
-**A:** No. Voice is converted to text immediately and old conversations can be cleared.
-
-### Q: Can I use this for commercial work?
-**A:** Yes! MIT License allows commercial use.
-
-### Q: What if I find a bug?
-**A:** Open an issue on GitHub with details. We'll fix it!
+```
+┌─────────────────────────────────────────────────┐
+│                  Frontend (HTML/JS)              │
+│  ┌───────────┐  ┌───────────┐  ┌─────────────┐ │
+│  │  Voice UI  │  │  Chat UI  │  │  Settings   │ │
+│  └───────────┘  └───────────┘  └─────────────┘ │
+└─────────────────────────────────────────────────┘
+                        ↕
+┌─────────────────────────────────────────────────┐
+│              FastAPI Backend Server              │
+│  ┌───────────────────────────────────────────┐  │
+│  │  Audio Processing Pipeline                 │  │
+│  │  • Decode → Preprocess → Validate          │  │
+│  └───────────────────────────────────────────┘  │
+│  ┌────────────┐  ┌────────────┐  ┌──────────┐  │
+│  │  Whisper   │  │ Ollama/    │  │ Edge TTS │  │
+│  │    STT     │  │  Gemini    │  │          │  │
+│  └────────────┘  └────────────┘  └──────────┘  │
+└─────────────────────────────────────────────────┘
+```
 
 ---
 
-## 🎓 Learn More
+## 🤝 Contributing
 
-- **Want to install?** → Read [SETUP.md](SETUP.md)
-- **Quick answers?** → Check [QUICK_REFERENCE.md](QUICK_REFERENCE.md)  
-- **What's new?** → See [CHANGELOG.md](CHANGELOG.md)
-- **Technical details?** → Scroll down in this README
+We welcome contributions! Here's how you can help:
 
----
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
 
-## 🏆 Why Blow AI?
+### Areas for Contribution
 
-### ✨ Unique Advantages
-
-**Flexibility**
-- Choose your AI (local or cloud)
-- No vendor lock-in
-- Full control over your data
-
-**Reliability**
-- Works online AND offline
-- Never interrupted by internet issues
-- Always have a fallback option
-
-**Simplicity**
-- Modern, clean interface
-- No complex configuration
-- Just download and use
-
-**Openness**
-- Open source code
-- MIT licensed
-- Community-driven development
+- 🌐 Multi-language support
+- 🎨 UI/UX improvements
+- 🔧 New AI model integrations
+- 📱 Mobile app development
+- 📚 Documentation enhancements
+- 🐛 Bug fixes and optimizations
 
 ---
 
-## 🚀 Next Steps
+## 🐛 Troubleshooting
 
-### To Get Started:
-1. Read [SETUP.md](SETUP.md) for installation
-2. Follow step-by-step guide
-3. Click the microphone and start talking!
+### Common Issues
 
-### To Learn More:
-1. Visit [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-2. Check API documentation
-3. Explore customization options
+**Problem:** Microphone not working
+- **Solution:** Check browser permissions and ensure HTTPS or localhost
+
+**Problem:** Whisper transcription fails
+- **Solution:** Ensure audio is at least 1 second long and speak clearly
+
+**Problem:** Ollama connection error
+- **Solution:** Make sure Ollama is running (`ollama serve`)
+
+**Problem:** Poor audio quality
+- **Solution:** Adjust `MIN_AUDIO_DURATION` and speak closer to the microphone
+
+**Problem:** Slow responses
+- **Solution:** Use a smaller Whisper model or lighter Ollama model
+
+### Debug Mode
+
+Enable debug logging by modifying the server:
+
+```python
+# In server.py, add at startup
+import logging
+logging.basicConfig(level=logging.DEBUG)
+```
 
 ---
 
-## 📞 Support & Help
+## 📝 Changelog
 
-- **Installation help** → [SETUP.md](SETUP.md)
-- **Quick questions** → [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-- **Found a bug** → Open GitHub issue
-- **Have a suggestion** → Open GitHub discussion
+### Version 5.0 - Latest Release
+- ✨ Enhanced audio processing with multiple format support
+- 🔧 Improved error handling and validation
+- 🎨 Redesigned UI with modern aesthetics
+- 🚀 Performance optimizations for faster responses
+- 📱 Better mobile responsiveness
+- 🔊 Expanded voice selection with 10+ options
+- 💾 Custom prompt management system
+
+### Version 4.0
+- Added Gemini AI integration
+- Implemented conversation history
+- Created settings panel
+
+### Version 3.0
+- Initial voice recognition
+- Basic chat functionality
+- TTS integration
 
 ---
 
 ## 📄 License
 
-Blow AI is free and open source under the MIT License.
-
-**You can:**
-✅ Use it for anything (personal, commercial)  
-✅ Modify the code  
-✅ Share it with others  
-✅ Use it in your projects  
-
-**You must:**
-📋 Include the license notice  
-📋 Give credit to contributors  
-
----
-
-## 🙏 Thank You
-
-Built with love by developers who believe in:
-- **Privacy**: Your data, your choice
-- **Freedom**: No lock-ins or restrictions
-- **Simplicity**: Technology that works
-- **Quality**: Professional-grade tools
-
----
-
-**Ready to try Blow AI?** → Start with [SETUP.md](SETUP.md)
-
-**Questions?** → Check [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-
----
-
-**Made with ❤️ for intelligent voice communication**
-
-*Version 5.0 | Built with FastAPI, Whisper, Ollama, and Google Gemini*
-
----
-
-## � For Developers - Technical Architecture
-
-### The Complete System (Simplified)
-
-**Three main parts work together:**
-
-1. **Frontend** (What you interact with)
-   - Beautiful user interface
-   - Microphone recording
-   - Plays audio responses
-   - Shows conversation history
-
-2. **Backend** (The brain)
-   - Receives your voice
-   - Routes to right AI model
-   - Manages conversations
-   - Returns responses
-
-3. **AI Models** (The intelligence)
-   - **Ollama**: Local model running on your computer
-   - **Gemini**: Cloud model accessible via internet
-   - **Whisper**: Converts voice to text
-   - **TTS**: Converts text back to voice
-
----
-
-## 📖 API Overview (For Developers)
-
-We provide REST API endpoints for developers who want to integrate Blow AI:
-
-- **Health Check** - Is the system running?
-- **Get Models** - Which AI models are available?
-- **Transcribe** - Convert audio to text
-- **Chat** - Send message, get response
-- **TTS** - Convert text to speech
-- **Conversation** - Get or clear chat history
-
-For detailed API documentation, visit `http://localhost:8000/docs` after starting the server.
-
----
-
-## 📁 How Files Are Organized
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ```
-blew/
-├── README.md                    (You're reading this)
-├── SETUP.md                     (How to install)
-├── QUICK_REFERENCE.md           (Quick help)
-├── CHANGELOG.md                 (What's new)
-│
-└── backend/newer_version/v1/
-    ├── blow_ai_server.py        (Main application)
-    ├── index_fixed.html         (User interface)
-    ├── .env                     (Settings - keep private!)
-    └── requirements.txt         (Software packages needed)
+MIT License
+
+Copyright (c) 2024 Blow AI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 ```
 
 ---
 
-## ⚙️ Configuration (Simple Explanation)
+## 🙏 Acknowledgments
 
-The `.env` file is where you customize settings. Think of it like a recipe that tells the system:
-
-- **Which Google Gemini key to use** (for online mode)
-- **Which local model to run** (for offline mode)
-- **Which voice to use** for speaking responses
-- **How to process audio** for best quality
-
-We provide a template (`.env.example`) so you just copy it and add your settings.
+- **OpenAI Whisper** - For exceptional speech recognition
+- **Ollama** - For making local LLMs accessible
+- **Google Gemini** - For powerful cloud AI capabilities
+- **Edge TTS** - For natural text-to-speech synthesis
+- **FastAPI** - For the robust backend framework
+- **The Open Source Community** - For continuous inspiration and support
 
 ---
 
-## 🐛 Troubleshooting Guide
+## 📧 Contact & Support
 
-### "My internet is off but AI still works!"
-✅ Perfect! That's Ollama (offline mode) running. This is the feature working as designed.
-
-### "I want better responses"
-✅ Switch to Gemini by clicking the radio button. Better responses at the cost of needing internet.
-
-### "The AI can't hear me"
-Try this:
-- Speak louder and clearer
-- Reduce background noise
-- Make sure browser has microphone permission
-- Check computer volume isn't muted
-
-### "Gemini says no more quota"
-Google's free tier has limits. Solutions:
-- Use Ollama instead (offline, no limits)
-- Wait for free tier to reset
-- Add a credit card to Google Cloud for unlimited
-
-### "Something isn't working"
-1. Check browser console (Press F12)
-2. Look at terminal where server runs
-3. Restart both frontend and backend
-4. Check [SETUP.md](SETUP.md) for detailed help
+- **GitHub Issues:** [Report a bug](https://github.com/yourusername/blow-ai-voice-assistant/issues)
+- **Email:** support@blowai.example.com
+- **Discord:** [Join our community](https://discord.gg/blowai)
+- **Twitter:** [@BlowAI](https://twitter.com/blowai)
 
 ---
 
-## 📊 Comparing the Two AI Models
+## 🌟 Star History
 
-### Ollama (Local AI)
-**The Trusted Friend**
-- ✅ Always available
-- ✅ No internet needed
-- ✅ Instant responses
-- ✅ 100% privacy
-- ⚠️ Good, not excellent at complex tasks
+If you find this project helpful, please consider giving it a ⭐ on GitHub!
 
-### Gemini (Cloud AI)
-**The Expert Consultant**
-- ✅ Best quality answers
-- ✅ Understands complex questions
-- ✅ Latest information
-- ⚠️ Needs internet
-- ⚠️ Free tier has usage limits
-
-**The Smart Choice:** Use Ollama for quick questions and offline, use Gemini when you need the best answer and have internet.
+[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/blow-ai-voice-assistant&type=Date)](https://star-history.com/#yourusername/blow-ai-voice-assistant&Date)
 
 ---
 
-## 🎓 Understanding The Technology
+<div align="center">
 
-### Don't worry if this seems technical - it's optional reading!
+**Made with ❤️ by the Blow AI Team**
 
-**Whisper** (The Listener)
-- Made by OpenAI (the ChatGPT people)
-- Converts your voice to text
-- Works in many languages
-- Very accurate with noise
+[⬆ Back to Top](#-blow-ai---advanced-voice-assistant)
 
-**Ollama** (The Local Thinker)  
-- Runs on your own computer
-- No internet required
-- Provides intelligent responses
-- Uses llama3.2 model internally
-
-**Gemini** (The Cloud Thinker)
-- Made by Google
-- Runs on Google's powerful computers
-- Can access latest information
-- Gives more sophisticated answers
-
-**Edge TTS** (The Speaker)
-- Converts AI text response to voice
-- Sounds natural and clear
-- Multiple voice options
-- Works offline
-
----
-
-## 🎯 Best Practices
-
-### When to Use Offline (Ollama)
-- You're on a plane or no internet
-- You want fast responses
-- You're concerned about privacy
-- Testing and development work
-- Quick questions that don't need advanced AI
-
-### When to Use Online (Gemini)
-- You need the best possible answer
-- Writing emails or documents
-- Creative tasks
-- Complex problem solving
-- You have stable internet
-
-### General Tips
-- Keep your API key private (in .env file)
-- Clear conversation history for fresh start
-- Use custom prompts for repeated tasks
-- Allow browser microphone permission
-- Use headphones to avoid feedback
-
----
-
-## 🌟 Key Takeaways
-
-1. **Two Powerful AIs**: Choose between fast local AI or powerful cloud AI
-2. **Works Everywhere**: Offline with Ollama, online with Gemini
-3. **Always Available**: No internet? Use offline. Got internet? Get best answers
-4. **Super Simple**: Just record, listen, repeat
-5. **Fully Private**: Your choice where your data goes
-6. **Open Source**: See the code, modify if you want, use freely
-
----
-
-## 📞 Getting Help
-
-**Installation problems?**
-→ Read [SETUP.md](SETUP.md) with step-by-step guide
-
-**Quick questions?**
-→ Check [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
-
-**Want to know what's new?**
-→ See [CHANGELOG.md](CHANGELOG.md)
-
-**Found a bug or have a suggestion?**
-→ Open an issue on GitHub
-
----
-
-## 🚀 What's Next?
-
-### Ready to Use Blow AI?
-1. Read [SETUP.md](SETUP.md) for installation
-2. Follow the simple steps
-3. Click microphone and start talking
-4. Choose offline (Ollama) or online (Gemini)
-5. Enjoy intelligent voice conversations!
-
-### Want to Integrate It?
-- Check the API documentation at `http://localhost:8000/docs`
-- See [QUICK_REFERENCE.md](QUICK_REFERENCE.md) for code examples
-- Build your own applications on top!
-
-### Want to Customize?
-- Modify prompts in the interface
-- Change AI models
-- Create custom commands
-- Integrate with your applications
-
----
-
-## 📄 License & Usage Rights
-
-Blow AI is completely FREE and open source.
-
-**You can:**
-✅ Download and use for free  
-✅ Use for personal projects  
-✅ Use for business/commercial  
-✅ Modify the code  
-✅ Share with friends and colleagues  
-✅ Integrate into your applications  
-
-**You just need to:**
-📋 Keep the license notice  
-📋 Give credit to contributors  
-
-That's it! No fees, no restrictions.
-
----
-
-## 🙌 Join Our Community
-
-- ⭐ Star us on GitHub to show support
-- 🐛 Report bugs to help us improve
-- 💡 Share ideas for new features
-- 📝 Help improve documentation
-- 👥 Tell your friends!
-
----
-
-## 🎯 Our Vision
-
-We believe voice should be the future of computing:
-
-- **Natural**: Talk like you normally do
-- **Fast**: Instant response
-- **Smart**: Understands context
-- **Available**: Works anywhere
-- **Open**: Anyone can use and modify
-- **Private**: You control your data
-
----
-
-## 📚 Complete Documentation Index
-
-| Document | Best For |
-|----------|----------|
-| **README.md** (This file) | Learning what Blow AI is |
-| **SETUP.md** | Installing and getting started |
-| **QUICK_REFERENCE.md** | Finding quick answers |
-| **CHANGELOG.md** | Seeing what's new |
-| **API Docs** | Building integrations |
-
----
-
-**Blow AI: Intelligent Voice Communication for Everyone**
-
-*Transform the way you interact with AI. Work online with Gemini's power or offline with Ollama's simplicity. Your choice, always.*
-
----
-
-**Questions?** Start with [SETUP.md](SETUP.md)
-
-**Ready?** Let's build the future of voice! 🚀
+</div>
