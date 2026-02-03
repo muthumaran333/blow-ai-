@@ -64,6 +64,13 @@
 
 ---
 
+## 🏗️ Architecture
+
+![Architecture](https://github.com/muthumaran333/blow-ai-/blob/main/image/architecture_blow_ai.png)
+
+---
+
+
 ## 📸 Demo
 
 <div align="center">
@@ -320,15 +327,6 @@ GET /models
 GET /conversation
 DELETE /conversation
 ```
-
----
-
-## 🏗️ Architecture
-
-![Architecture](https://github.com/muthumaran333/blow-ai-/blob/main/image/architecture_blow_ai.png)
-
-
----
 
 ## 🤝 Contributing
 
