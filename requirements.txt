@@ -1,0 +1,38 @@
+# FastAPI and Web Framework
+fastapi==0.128.0
+uvicorn==0.40.0
+python-multipart==0.0.6
+
+# Speech-to-Text
+openai-whisper==20250625
+torch==2.10.0
+torchaudio==2.10.0
+
+# Audio Processing
+librosa==0.11.0
+soundfile==0.13.1
+scipy==1.17.0
+numpy==2.3.5
+
+# Local LLM
+ollama==0.6.1
+
+# Cloud LLM
+google-generativeai==0.8.6
+google-api-core==2.29.0
+google-auth==2.49.0.dev0
+protobuf==5.29.5
+
+# Text-to-Speech
+edge-tts==7.2.7
+aiohttp==3.13.3
+
+# Environment Configuration
+python-dotenv==1.2.1
+
+# Utilities
+pydantic==2.12.5
+requests==2.32.5
+tqdm==4.67.2
+
+
