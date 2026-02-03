@@ -95,8 +95,8 @@ Before you begin, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/blow-ai-voice-assistant.git
-cd blow-ai-voice-assistant
+git clone https://github.com/muthumaran333/blow-ai-.git
+cd blow-ai-
 ```
 
 ### Step 2: Create Virtual Environment
